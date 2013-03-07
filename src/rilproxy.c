@@ -53,7 +53,8 @@
 #define LOG_TAG "RILPROXY"
 #include <utils/Log.h>
 #include <cutils/sockets.h>
-
+#define LOGE(args...)
+#define LOGD(args...)
 
 void switchUser() {
   prctl(PR_SET_KEEPCAPS, 1, 0, 0, 0);
